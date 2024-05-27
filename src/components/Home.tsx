@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  'src/assets/images/Dominar400.jpg',
-  'src/assets/images/fondopaginaweb.jpg',
+  'src/assets/images/LogoIJD.jpg',
+  'src/assets/images/clonacion.jpeg',
+  'src/assets/images/hpA.jpeg',
+  'src/assets/images/hpR.jpeg',
+  'src/assets/images/mac.jpeg',
   'src/assets/images/trofeoreginal.jpeg',
 ];
 

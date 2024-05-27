@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  }
+  
+  section {
+    padding: 4rem 0;
+  }
+  
+  h1, h2 {
+    color: #2D3748;
+  }

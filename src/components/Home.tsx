@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
-  'src/assets/images/LogoIJD.jpg',
-  'src/assets/images/clonacion2.jpg',
-  'src/assets/images/hpA2.jpg',
-  'src/assets/images/hpR2.jpg',
-  'src/assets/images/mac2.jpg',
-  'src/assets/images/trofeoreginal2.jpg',
+  'src/assets/LogoIJD.jpg',
+  'src/assets/clonacion2.jpg',
+  'src/assets/hpA2.jpg',
+  'src/assets/hpR2.jpg',
+  'src/assets/mac2.jpg',
+  'src/assets/trofeoreginal2.jpg',
 ];
 
 const Home: React.FC = () => {

@@ -1,10 +1,10 @@
 import React from 'react';
-import mosomotImage from '../assets/images/mosomot2.jpg';
-import PtoVentaImage from '../assets/images/punto de venta.jpg';
-import DesarolloImage from '../assets/images/desarrollo2.jpg';
-import automatizacionImage from '../assets/images/automatizacion2.jpg';
-import infrestructuraImage from '../assets/images/servidores2.jpg';
-import ConsultoriaImage from '../assets/images/consultoria3.jpg';
+import mosomotImage from '../assets/mosomot2.jpg';
+import PtoVentaImage from '../assets/punto de venta.jpg';
+import DesarolloImage from '../assets/desarrollo2.jpg';
+import automatizacionImage from '../assets/automatizacion2.jpg';
+import infrestructuraImage from '../assets/servidores2.jpg';
+import ConsultoriaImage from '../assets/consultoria3.jpg';
 
 const projects = [
   {

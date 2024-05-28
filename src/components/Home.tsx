@@ -3,11 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
   'src/assets/images/LogoIJD.jpg',
-  'src/assets/images/clonacion.jpeg',
-  'src/assets/images/hpA.jpeg',
-  'src/assets/images/hpR.jpeg',
-  'src/assets/images/mac.jpeg',
-  'src/assets/images/trofeoreginal.jpeg',
+  'src/assets/images/clonacion2.jpg',
+  'src/assets/images/hpA2.jpg',
+  'src/assets/images/hpR2.jpg',
+  'src/assets/images/mac2.jpg',
+  'src/assets/images/trofeoreginal2.jpg',
 ];
 
 const Home: React.FC = () => {

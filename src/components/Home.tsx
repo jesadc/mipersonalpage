@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import logoIJD from 'src/assets/LogoIJD.jpg';
-import clonacion2 from 'src/assets/clonacion2.jpg';
-import hpA2 from 'src/assets/hpA2.jpg';
-import hpR2 from 'src/assets/hpR2.jpg';
-import mac2 from 'src/assets/mac2.jpg';
-import trofeoreginal2 from 'src/assets/trofeoreginal2.jpg';
+import logoIJD from '../assets/LogoIJD.jpg';
+import clonacion2 from '../assets/clonacion2.jpg';
+import hpA2 from '../assets/hpA2.jpg';
+import hpR2 from '../assets/hpR2.jpeg';
+import mac2 from '../assets/mac2.jpg';
+import trofeoreginal2 from '../assets/trofeoreginal2.jpg';
 
 const images = [
   logoIJD,

@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import logoIJD from 'src/assets/LogoIJD.jpg';
+import clonacion2 from 'src/assets/clonacion2.jpg';
+import hpA2 from 'src/assets/hpA2.jpg';
+import hpR2 from 'src/assets/hpR2.jpg';
+import mac2 from 'src/assets/mac2.jpg';
+import trofeoreginal2 from 'src/assets/trofeoreginal2.jpg';
 
 const images = [
-  'src/assets/LogoIJD.jpg',
-  'src/assets/clonacion2.jpg',
-  'src/assets/hpA2.jpg',
-  'src/assets/hpR2.jpg',
-  'src/assets/mac2.jpg',
-  'src/assets/trofeoreginal2.jpg',
+  logoIJD,
+  clonacion2,
+  hpA2,
+  hpR2,
+  mac2,
+  trofeoreginal2,
 ];
 
 const Home: React.FC = () => {

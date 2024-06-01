@@ -9,49 +9,58 @@ import ConsultoriaImage from '../assets/consultoria3.jpg';
 const projects = [
   {
     title: 'MOSOMOT',
-    description: 'Proyecto galardonado con el primer lugar en la categoría automotriz en INNOVATECNM 2022. Desarrollé un sistema innovador para vehículos automotrices, destacando por su eficiencia y tecnología de punta.',
-    imageUrl: mosomotImage, // Reemplazar con una URL real de imagen
+    description: 'Gané el primer lugar en INNOVATECNM 2022 con el desarrollo un sistema innovador para motocicletas.',
+    shortDescription: 'Gané el primer lugar en INNOVATECNM 2022.',
+    imageUrl: mosomotImage,
   },
   {
     title: 'Sistema de Punto de Venta',
-    description: 'Diseñé e implementé sistemas de punto de venta personalizados para múltiples negocios, mejorando significativamente la eficiencia operativa y la experiencia del cliente.',
-    imageUrl: PtoVentaImage, // Reemplazar con una URL real de imagen
+    description: 'Diseño e implemento sistemas de punto de venta personalizados para múltiples negocios.',
+    shortDescription: 'Diseño sistemas de punto de venta.',
+    imageUrl: PtoVentaImage,
   },
   {
     title: 'Desarrollo de Aplicaciones',
-    description: 'He creado varias aplicaciones móviles y web utilizando tecnologías modernas como React, TypeScript y Tailwind CSS, enfocándome en la usabilidad y el diseño responsivo.',
-    imageUrl: DesarolloImage, // Reemplazar con una URL real de imagen
+    description: 'Creo varias aplicaciones móviles y web utilizando tecnologías modernas como React, TypeScript y Tailwind CSS.',
+    shortDescription: 'Creo aplicaciones móviles y web.',
+    imageUrl: DesarolloImage,
   },
   {
     title: 'Automatización de Procesos Empresariales',
-    description: 'Implementé soluciones de automatización para procesos empresariales, reduciendo costos operativos y mejorando la eficiencia en diversas organizaciones.',
-    imageUrl: automatizacionImage, // Reemplazar con una URL real de imagen
+    description: 'Implemento soluciones de automatización para procesos empresariales, mejorando la eficiencia en diversas organizaciones.',
+    shortDescription: 'Automatización para empresas.',
+    imageUrl: automatizacionImage,
   },
   {
     title: 'Infraestructura de Servidores',
-    description: 'Configuré y mantuve infraestructuras de servidores locales y en la nube para varias empresas, garantizando alta disponibilidad y seguridad.',
-    imageUrl: infrestructuraImage, // Reemplazar con una URL real de imagen
+    description: 'Configuro y mantengo infraestructuras de servidores locales y en la nube para varias empresas.',
+    shortDescription: 'Mantengo infraestructuras de servidores.',
+    imageUrl: infrestructuraImage,
   },
   {
     title: 'Consultoría Tecnológica',
-    description: 'Ofrecí servicios de consultoría tecnológica a empresas y startups, ayudándolas a definir y alcanzar sus objetivos tecnológicos con soluciones innovadoras.',
-    imageUrl: ConsultoriaImage, // Reemplazar con una URL real de imagen
+    description: 'Ofrezco servicios de consultoría tecnológica a empresas y startups, ayudándolas a alcanzar sus objetivos tecnológicos con soluciones innovadoras.',
+    shortDescription: 'Consultoría tecnológica para empresas.',
+    imageUrl: ConsultoriaImage,
   },
 ];
 
 const Portfolio: React.FC = () => {
   return (
-    <section id="portfolio" className="p-8 bg-gray-50">
-      <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">Portafolio</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="portfolio" className="py-16 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-extrabold mb-12 text-center text-gray-800">Portafolio</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="w-full h-48 mb-4 overflow-hidden rounded-t-lg">
-                <img src={project.imageUrl} alt={project.title} className="w-full h-full object-cover" />
+            <div key={index} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="overflow-hidden rounded-t-lg">
+                <img src={project.imageUrl} alt={project.title} className="w-full h-32 sm:h-48 object-cover" />
               </div>
-              <h3 className="text-2xl font-semibold mb-2 text-gray-800">{project.title}</h3>
-              <p className="text-lg text-gray-600">{project.description}</p>
+              <div className="p-4 sm:p-6">
+                <h3 className="text-lg sm:text-2xl font-semibold mb-2 sm:mb-3 text-gray-800">{project.title}</h3>
+                <p className="text-gray-600 text-justify text-xs sm:text-sm md:hidden">{project.shortDescription}</p>
+                <p className="text-gray-600 text-justify text-xs sm:text-sm hidden md:block">{project.description}</p>
+              </div>
             </div>
           ))}
         </div>

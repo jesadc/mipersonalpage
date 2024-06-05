@@ -65,7 +65,7 @@ const Home: React.FC = () => {
         transition={{ duration: 1.5 }}
       >
         <h1 className="text-5xl font-extrabold tracking-tight text-white text-center">¡Hola, Bienvenidos!</h1>
-        <p className="mt-4 text-2xl font-light">Mi nombre es: <span className="font-semibold">Jesús Durán</span>, un apasionado <span className="font-semibold">ingeniero en sistemas computacionales</span>. Me dedico a transformar ideas en realidades tecnológicas innovadoras.</p>
+        <p className="mt-4 text-2xl font-light">Mi nombre es <span className="font-semibold">Jesús Durán Cámara</span>, un apasionado <span className="font-semibold">ingeniero en sistemas computacionales</span>. Me dedico a transformar ideas en realidades tecnológicas innovadoras.</p>
         <p className="mt-4 text-xl">Explora mi sitio para conocer más sobre mis servicios y proyectos.</p>
       </motion.div>
     </section>

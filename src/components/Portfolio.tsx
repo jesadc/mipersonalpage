@@ -5,6 +5,7 @@ import DesarolloImage from '../assets/desarrollo2.jpg';
 import automatizacionImage from '../assets/automatizacion2.jpg';
 import infrestructuraImage from '../assets/servidores2.jpg';
 import ConsultoriaImage from '../assets/consultoria3.jpg';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -47,12 +48,37 @@ const projects = [
 
 const Portfolio: React.FC = () => {
   return (
-    <section id="portfolio" className="py-16 bg-gray-50">
+    <motion.section 
+      id="portfolio" 
+      className="py-16 bg-gray-50"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+    >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-extrabold mb-12 text-center text-gray-800">Portafolio</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <motion.div 
+          className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4"
+          variants={{
+            visible: {
+              transition: {
+                staggerChildren: 0.3
+              }
+            }
+          }}
+          initial="hidden"
+          whileInView="visible"
+        >
           {projects.map((project, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+            <motion.div 
+              key={index} 
+              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 }
+              }}
+            >
               <div className="overflow-hidden rounded-t-lg">
                 <img src={project.imageUrl} alt={project.title} className="w-full h-32 sm:h-48 object-cover" />
               </div>
@@ -61,11 +87,11 @@ const Portfolio: React.FC = () => {
                 <p className="text-gray-600 text-justify text-xs sm:text-sm md:hidden">{project.shortDescription}</p>
                 <p className="text-gray-600 text-justify text-xs sm:text-sm hidden md:block">{project.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

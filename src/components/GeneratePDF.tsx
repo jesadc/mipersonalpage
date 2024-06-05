@@ -1,10 +1,8 @@
 import React from 'react';
 import pdfMake from 'pdfmake/build/pdfmake';
-import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 import logo from '../assets/LogoIJD.jpg';
 import { getBase64ImageFromUrl } from './utils';
 
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 interface GeneratePDFProps {
   selectedService: string;

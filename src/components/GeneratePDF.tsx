@@ -1,8 +1,10 @@
 import React from 'react';
 import pdfMake from 'pdfmake/build/pdfmake';
+import pdfFonts from 'pdfmake/build/vfs_fonts'; // Importar pdfFonts
 import logo from '../assets/LogoIJD.jpg';
 import { getBase64ImageFromUrl } from './utils';
 
+pdfMake.vfs = pdfFonts.pdfMake.vfs; // Asignar pdfFonts a pdfMake.vfs
 
 interface GeneratePDFProps {
   selectedService: string;
@@ -17,6 +19,7 @@ interface GeneratePDFProps {
 
 const GeneratePDF: React.FC<GeneratePDFProps> = ({ selectedService, selectedRole, customRole, details, servicePrice, serviceUnit, needsWhatsApp, isFormComplete }) => {
   const generatePDF = async () => {
+    console.log('generatePDF called'); // Depuración
     const logoBase64 = await getBase64ImageFromUrl(logo);
 
     const documentDefinition: any = {

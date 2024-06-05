@@ -1,6 +1,6 @@
 import React from 'react';
 import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
+import pdfFonts from 'pdfmake/build/vfs_fonts.js';
 import logo from '../assets/LogoIJD.jpg';
 import { getBase64ImageFromUrl } from './utils';
 
@@ -106,7 +106,7 @@ const GeneratePDF: React.FC<GeneratePDFProps> = ({ selectedService, selectedRole
         return {
           columns: [
             { text: `Página ${currentPage} de ${pageCount}`, alignment: 'left' },
-            { text: 'Contacto: 9996431444 | jesadc571@gmail.com', alignment: 'right' }
+            { text: 'Contacto: 9996431444 | email@example.com', alignment: 'right' }
           ],
           margin: [40, 0]
         };

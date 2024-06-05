@@ -1,6 +1,6 @@
 import React from 'react';
 import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts.js';
+import * as pdfFonts from 'pdfmake/build/vfs_fonts.js';
 import logo from '../assets/LogoIJD.jpg';
 import { getBase64ImageFromUrl } from './utils';
 

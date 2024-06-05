@@ -47,14 +47,23 @@ const projects = [
 ];
 
 const Portfolio: React.FC = () => {
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   return (
     <motion.section 
       id="portfolio" 
       className="py-16 bg-gray-50"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial="hidden"
+      whileInView="visible"
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+      }}
     >
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-extrabold mb-12 text-center text-gray-800">Portafolio</h2>
@@ -69,15 +78,13 @@ const Portfolio: React.FC = () => {
           }}
           initial="hidden"
           whileInView="visible"
+          viewport={{ once: true }}
         >
           {projects.map((project, index) => (
             <motion.div 
               key={index} 
               className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-              variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0 }
-              }}
+              variants={itemVariants}
             >
               <div className="overflow-hidden rounded-t-lg">
                 <img src={project.imageUrl} alt={project.title} className="w-full h-32 sm:h-48 object-cover" />

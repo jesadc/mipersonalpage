@@ -7,7 +7,6 @@ import SelectRole from './SelectRole';
 import InputField from './InputField';
 import GeneratePDF from './GeneratePDF';
 
-
 const Quotations: React.FC = () => {
   const [selectedService, setSelectedService] = useState<string>('');
   const [selectedRole, setSelectedRole] = useState<string>('');
@@ -51,7 +50,7 @@ const Quotations: React.FC = () => {
       case 'Nombre del cliente':
         return 'Ej. Juan Pérez';
       case 'Nombre del negocio':
-        case 'Nombre del negocio o persona':
+      case 'Nombre del negocio o persona':
       case 'Nombre de la empresa':
       case 'Nombre de la empresa/institución':
         return 'Ej. Vida Sana';
@@ -143,21 +142,42 @@ const Quotations: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-8 bg-gradient-to-r from-green-400 to-blue-500 opacity-75 text-gray-900">
+    <motion.section 
+      id="contact" 
+      className="py-8 bg-gradient-to-r from-green-400 to-blue-500 opacity-75 text-gray-900"
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+      }}
+    >
       <div className="container mx-auto px-4">
         <motion.h2 
           className="text-3xl font-extrabold text-center mb-8" 
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }} 
+          initial="hidden"
+          whileInView="visible"
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 }
+          }}
         >
           Cotizaciones
         </motion.h2>
         <motion.div 
           className="bg-white p-4 rounded-lg shadow-lg space-y-4 text-gray-800"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial="hidden"
+          whileInView="visible"
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 }
+          }}
         >
           <SelectService services={services} selectedService={selectedService} onServiceChange={handleServiceChange} />
           {selectedService && (
@@ -199,12 +219,18 @@ const Quotations: React.FC = () => {
             <FaWhatsapp className="mr-1" size={16} /> Enviar Cotización por WhatsApp
           </motion.button>
         </motion.div>
-        <div className="mt-8 flex flex-col items-center text-center">
+        <strong className=' items-center justify-center flex  w-full my-8'>Contactame</strong>
+        <div className="mt-8 flex items-center justify-center space-x-6 text-center">
           <motion.div 
             className="mb-4"
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
+            initial="hidden"
+            whileInView="visible"
             transition={{ duration: 1.2, delay: 0.2 }}
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 }
+            }}
           >
             <a href="mailto:jesadc571@gmail.com?subject=Consulta" className="flex items-center">
               <FaEnvelope className="inline-block mr-2" /> <span>jesadc571@gmail.com</span>
@@ -212,9 +238,14 @@ const Quotations: React.FC = () => {
           </motion.div>
           <motion.div 
             className="mb-4"
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1 }} 
+            initial="hidden"
+            whileInView="visible"
             transition={{ duration: 1.2, delay: 0.4 }}
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 }
+            }}
           >
             <a href="tel:+529971452693" className="flex items-center">
               <FaPhone className="inline-block mr-2" /> <span>+52 9996431444</span>
@@ -222,7 +253,7 @@ const Quotations: React.FC = () => {
           </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

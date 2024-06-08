@@ -5,6 +5,13 @@ import DesarolloImage from '../assets/desarrollo2.jpg';
 import automatizacionImage from '../assets/automatizacion2.jpg';
 import infrestructuraImage from '../assets/servidores2.jpg';
 import ConsultoriaImage from '../assets/consultoria3.jpg';
+import LogoMosomot from '../assets/LogoMosomot.png';
+import ModuloGPS from '../assets/moduloGPS.png';
+import DominarUG from '../assets/moduloinstaladodominar400ug2020.jpg';
+import Ns200 from '../assets/NS2oo.jpg';
+import GooglePlayApp from '../assets/googleplayapp.jpg';
+import Diploma from '../assets/InnovaDiploma2022.jpg';
+
 import Durango2 from '../assets/durango2.jpg';
 import Durango3 from '../assets/durango3.jpg';
 import Durango5 from '../assets/durango5.jpg';
@@ -27,7 +34,7 @@ const projects: Project[] = [
     description: 'Gané el primer lugar en INNOVATECNM 2022 con el desarrollo un sistema innovador para motocicletas. Este proyecto me permitió reducir significativamente los robos de motocicletas mediante un módulo de seguridad avanzado.',
     shortDescription: 'Gané el primer lugar en INNOVATECNM 2022.',
     imageUrl: mosomotImage,
-    additionalImages: [Durango2, Durango3, Durango5, Durango6, Durango7],
+    additionalImages: [Diploma, Durango2, Durango3, Durango5, Durango6, Durango7, LogoMosomot, ModuloGPS,DominarUG, Ns200, GooglePlayApp],
     detailedDescription: [
       'MOSOMOT es un sistema avanzado diseñado para mejorar la seguridad y la eficiencia de las motocicletas. Incluye funcionalidades como rastreo GPS, alertas en tiempo real y diagnóstico remoto del vehículo.',
       'El "Modulo C1" es capaz de frustrar intentos de robo mediante una aplicación móvil que permite controlar cuatro funciones principales: desbloqueo previo al encendido, encendido a distancia, bloqueo del motor con alarma y activación del claxon.',

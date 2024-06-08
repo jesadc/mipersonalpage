@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa';
-import { services } from '../data';
+import { services } from '../data/data';
 import SelectService from './SelectServices';
 import SelectRole from './SelectRole';
 import InputField from './InputField';

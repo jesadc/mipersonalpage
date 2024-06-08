@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-green-400 to-blue-500 text-white p-4 shadow-lg fixed w-full z-50">
+    <header className="bg-gradient-to-r from-green-400 to-blue-500   text-white p-4 shadow-lg fixed w-full z-50">
       <nav className="container mx-auto flex justify-between items-center">
         <Link
           to="home"

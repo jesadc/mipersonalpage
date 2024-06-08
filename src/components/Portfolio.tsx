@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import projects, { Project } from '../projectsData'; // Importa el tipo Project
+import projects, { Project } from '../data/projectsData';
 import Modal from './Modal';
 
 const Portfolio: React.FC = () => {

@@ -1,10 +1,16 @@
 // projectsData.ts
-import mosomotImage from './assets/mosomot2.jpg';
-import PtoVentaImage from './assets/punto de venta.jpg';
-import DesarolloImage from './assets/desarrollo2.jpg';
-import automatizacionImage from './assets/automatizacion2.jpg';
-import infrestructuraImage from './assets/servidores2.jpg';
-import ConsultoriaImage from './assets/consultoria3.jpg';
+import mosomotImage from '../assets/durango1.jpg';
+import PtoVentaImage from '../assets/punto de venta.jpg';
+import DesarolloImage from '../assets/desarrollo2.jpg';
+import automatizacionImage from '../assets/automatizacion2.jpg';
+import infrestructuraImage from '../assets/servidores2.jpg';
+import ConsultoriaImage from '../assets/consultoria3.jpg';
+import Durango2 from '../assets/durango2.jpg';
+import Durango3 from '../assets/durango3.jpg';
+import Durango5 from '../assets/durango5.jpg';
+import Durango6 from '../assets/durango6.jpg';
+import Durango7 from '../assets/durango7.jpg';
+
 
 export interface Project {
   title: string;
@@ -18,15 +24,16 @@ export interface Project {
 const projects: Project[] = [
   {
     title: 'MOSOMOT',
-    description: 'Gané el primer lugar en INNOVATECNM 2022 con el desarrollo un sistema innovador para motocicletas.',
+    description: 'Gané el primer lugar en INNOVATECNM 2022 con el desarrollo un sistema innovador para motocicletas. Este proyecto me permitió reducir significativamente los robos de motocicletas mediante un módulo de seguridad avanzado.',
     shortDescription: 'Gané el primer lugar en INNOVATECNM 2022.',
     imageUrl: mosomotImage,
-    additionalImages: [mosomotImage, mosomotImage],
+    additionalImages: [Durango2, Durango3, Durango5, Durango6, Durango7],
     detailedDescription: [
       'MOSOMOT es un sistema avanzado diseñado para mejorar la seguridad y la eficiencia de las motocicletas. Incluye funcionalidades como rastreo GPS, alertas en tiempo real y diagnóstico remoto del vehículo.',
-      'Este proyecto no solo me permitió ganar el primer lugar en INNOVATECNM 2022, sino que también abrió puertas para futuras innovaciones en el sector automotriz.'
+      'El "Modulo C1" es capaz de frustrar intentos de robo mediante una aplicación móvil que permite controlar cuatro funciones principales: desbloqueo previo al encendido, encendido a distancia, bloqueo del motor con alarma y activación del claxon.',
+      'Este proyecto no solo me permitió ganar el primer lugar en INNOVATECNM 2022, sino que también abrió puertas para futuras innovaciones en el sector automotriz, beneficiando a una gran cantidad de usuarios y reduciendo significativamente el robo de motocicletas.'
     ]
-  },
+  },  
   {
     title: 'Sistema de Punto de Venta',
     description: 'Diseño e implemento sistemas de punto de venta personalizados para múltiples negocios.',

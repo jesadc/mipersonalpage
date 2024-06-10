@@ -50,7 +50,7 @@ const Home: React.FC = () => {
         ))}
       </AnimatePresence>
       <motion.div
-        className="absolute inset-0 bg-black bg-opacity-75"
+        className="absolute inset-0 bg-black bg-opacity-45"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}

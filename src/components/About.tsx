@@ -90,7 +90,7 @@ const About: React.FC = () => {
                 { icon: <FaLightbulb className="mr-2 text-yellow-500 text-lg sm:text-xl md:text-2xl" />, label: 'Solución de problemas' },
                 { icon: <FaTools className="mr-2 text-green-500 text-lg sm:text-xl md:text-2xl" />, label: 'Desarrollo de software' },
                 { icon: <FaDesktop className="mr-2 text-gray-500 text-lg sm:text-xl md:text-2xl" />, label: 'Gestión de puntos de venta' },
-                { icon: <FaDesktop className="mr-2 text-gray-500 text-lg sm:text-xl md:text-2xl" />, label: 'Hardware de computadora' },
+                { icon: <FaDesktop className="mr-2 text-gray-500 text-lg sm:text-xl md:text-2xl" />, label: 'Hardware' },
                 { icon: <FaDatabase className="mr-2 text-purple-500 text-lg sm:text-xl md:text-2xl" />, label: 'Administración de base de datos' }
               ].map((skill, index) => (
                 <motion.div 
